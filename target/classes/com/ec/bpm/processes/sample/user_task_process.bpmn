@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:tns="http://sourceforge.net/bpmn/definitions/_1497252164956" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:yaoqiang="http://bpmn.sourceforge.net" exporter="Yaoqiang BPMN Editor" exporterVersion="5.3" expressionLanguage="http://www.w3.org/1999/XPath" id="_1497252164956" name="" targetNamespace="http://sourceforge.net/bpmn/definitions/_1497252164956" typeLanguage="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL http://bpmn.sourceforge.net/schemas/BPMN20.xsd">
+  <process id="user_task_process" isClosed="false" isExecutable="true" name="User Task Process" processType="Public">
+    <documentation id="user_task_process_D_1" textFormat="text/plain"><![CDATA[A process compromises a single user task activity, see that attached readme file for more information.]]></documentation>
+    <documentation id="user_task_process_D_2" textFormat="text/url"><![CDATA[http://some_url.com]]></documentation>
+    <documentation id="user_task_process_D_3" textFormat="text/url"><![CDATA[http://another_url.com]]></documentation>
+    <documentation id="user_task_process_D_4" textFormat="application/octet-stream"><![CDATA[readme.md]]></documentation>
+    <extensionElements>
+      <yaoqiang:description/>
+      <yaoqiang:pageFormat height="841.8897637795276" imageableHeight="831.8897637795276" imageableWidth="588.1102362204724" imageableX="5.0" imageableY="5.0" orientation="0" width="598.1102362204724"/>
+      <yaoqiang:page background="#FFFFFF" horizontalCount="1" verticalCount="1"/>
+    </extensionElements>
+    <userTask completionQuantity="1" id="_3" implementation="##unspecified" isForCompensation="false" name="1st task" startQuantity="1">
+      <incoming>_5</incoming>
+      <outgoing>_6</outgoing>
+    </userTask>
+    <endEvent id="_4" name="end">
+      <incoming>_6</incoming>
+      <inputSet/>
+    </endEvent>
+    <sequenceFlow id="_5" sourceRef="_2" targetRef="_3"/>
+    <sequenceFlow id="_6" sourceRef="_3" targetRef="_4"/>
+    <startEvent id="_2" isInterrupting="true" name="start" parallelMultiple="false">
+      <outgoing>_5</outgoing>
+      <outputSet/>
+    </startEvent>
+  </process>
+  <bpmndi:BPMNDiagram id="Yaoqiang_Diagram-user_task_process" name="Untitled Diagram" resolution="96.0">
+    <bpmndi:BPMNPlane bpmnElement="user_task_process">
+      <bpmndi:BPMNShape bpmnElement="_3" id="Yaoqiang-_3">
+        <dc:Bounds height="55.0" width="85.0" x="226.88888888888886" y="146.83333333333334"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="19.84" width="44.0" x="247.39" y="166.42"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_4" id="Yaoqiang-_4">
+        <dc:Bounds height="32.0" width="32.0" x="348.3333333333333" y="157.83333333333334"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="19.84" width="24.0" x="352.33" y="197.86"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_2" id="Yaoqiang-_2">
+        <dc:Bounds height="32.0" width="32.0" x="156.11111111111111" y="158.61111111111111"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="19.84" width="28.0" x="158.11" y="198.63"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="_6" id="Yaoqiang-_6">
+        <di:waypoint x="312.0" y="174.33333333333334"/>
+        <di:waypoint x="348.0003858071206" y="173.83333333333334"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="19.84" width="6.0" x="327.11" y="164.28"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_5" id="Yaoqiang-_5">
+        <di:waypoint x="187.99652740093578" y="174.61111111111111"/>
+        <di:waypoint x="227.0" y="174.33333333333334"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="19.84" width="6.0" x="204.5" y="164.56"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
